@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+:root {
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: #0f1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.activeColor {
+  color: white;
+}
+
+.main-grid {
+  max-width: 1440px;
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-full-grid {
+  background: #1c1f4a;
+  border-radius: 1em;
+  width: 25%;
+}
+
+.first-full-grid .top {
+  padding: 2em;
+  background: #5847eb;
+  border-radius: 1em;
+}
+
+.first-full-grid .top img {
+  margin-bottom: 2em;
+  width: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.first-full-grid .top .mid-sec {
+  color: white;
+}
+
+.first-full-grid .top .mid-sec .title {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #bdc1ff;
+}
+
+.first-full-grid .top .mid-sec .account-name {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.first-full-grid .bottom-list {
+  border-radius: 1em;
+  background: #1c1f4a;
+  padding: 2em;
+  color: #6f76c8;
+}
+
+.first-full-grid .bottom-list ul .li-item {
+  margin: 1em 0em;
+  cursor: pointer;
+}
+
+.second-full-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.grid-child .container {
+  width: 210px;
+  color: white;
+}
+
+.grid-child .container .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 1em;
+  overflow: hidden;
+}
+
+.grid-child .container .img-container img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 40px;
+}
+
+.grid-child .container .inner-container {
+  background: #1c1f4a;
+  border-radius: 1em;
+  padding: 2em 1.5em;
+}
+
+.grid-child .container .inner-container .top-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1em;
+  font-weight: 400;
+}
+
+.grid-child .container .inner-container .sum .mid-info {
+  font-size: 2.5rem;
+  padding-bottom: 0.3em;
+  font-weight: 300;
+}
+
+.grid-child .container .inner-container .sum .bottom-info {
+  font-size: 0.8rem;
+  color: #bdc1ff;
+}
+
+.work {
+  background: #ff8c66;
+  border-radius: 1em;
+}
+
+.play {
+  background: #56c2e6;
+  border-radius: 1em;
+}
+
+.study {
+  background: #ff5c7c;
+  border-radius: 1em;
+}
+
+.exercise {
+  background: #4acf81;
+  border-radius: 1em;
+}
+
+.social {
+  background: #7536d3;
+  border-radius: 1em;
+}
+
+.selfcare {
+  background: #f1c65b;
+  border-radius: 1em;
+}
+
+.first,
+.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-grid {
+    width: 90%;
+  }
+  .grid-child .container {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: unset;
+    padding: 2em 1em;
+  }
+  .main-grid {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-grid .first-full-grid {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .main-grid .first-full-grid .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-grid .first-full-grid .top img {
+    margin: 0;
+    width: 50px;
+  }
+  .main-grid .first-full-grid .top .mid-sec {
+    margin-left: 1em;
+  }
+  .main-grid .first-full-grid .top .title {
+    font-size: 0.8rem;
+  }
+  .main-grid .first-full-grid .top .account-name {
+    font-size: 1.2rem;
+  }
+  .main-grid .first-full-grid .bottom-list {
+    padding: 1em 1.5em;
+  }
+  .main-grid .first-full-grid .bottom-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-grid .first-full-grid .bottom-list ul .li-item {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .main-grid .second-full-grid {
+    width: 100%;
+  }
+  .grid-child .container {
+    width: 100%;
+  }
+  .grid-child .container .inner-container {
+    padding: 1.5em;
+  }
+  .grid-child .container .inner-container .top-info {
+    padding-bottom: 0.5em;
+  }
+  .grid-child .container .inner-container .top-info .left-top {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .grid-child .container .inner-container .sum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .grid-child .container .inner-container .sum .mid-info {
+    font-size: 1.5rem;
+  }
+  .first,
+  .second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  .first .grid-child,
+  .second .grid-child {
+    margin-bottom: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
